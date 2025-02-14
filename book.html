@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us
+        </title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="head1">
+<img src="images/logo.png" alt="" id="img">
+        </div>
+        <div id="head2">
+            <div class="head2">
+              <ul >
+                <a href=""></a>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="services.html" >Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                  
+              
+                <li><a href="book.html" id="button">Contact Us</a></li>
+                <li>
+                    <div id="google_translate_element">
+                    </div>
+    </li>
+             </ul>
+            </div>
+
+        </div>
+        
+    </header>
+    <div id="side">
+        <div id="underNav">
+<img src="images/logo.png" alt="" id="img">        
+        </div>
+
+        <div onclick="openNav()">
+         <div class="container" onclick="myFunction(this)" id="sideNav">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+           </div>
+         </div>
+       </div>
+
+       <div id="mySidenav" class="sidenav">
+        <div style="text-align: center;margin-bottom: 40px;">
+          <img src="images/logo.png" alt="" id="img"> 
+        </div>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        
+         <a href="login.php">Sign in</a>
+        <a href="book.html">Contact Us</a>
+    <div id="google_translate_element">
+    </div>
+         </div>
+       
+       
+      </div>
+
+<!-- content -->
+
+
+
+
+    <div id="services4" style="border: none;">
+        <div>
+        <h2 style="font-weight: 100;">Ready to enhance your Accounting strategies and grow your business? Contact Zumtree today.</h2>
+        <div style="background-color: #eff2f6;padding: 10px;">
+    <h3 style="color: #3fbdee;">Office Address</h3>
+    <p>117 Constitution Road
+    Chatham
+    ME5 7DW
+    Kent</p>
+    
+    <h3 style="color: #3fbdee;">Phone Number</h3>
+    <p>+44 7398 313362</p>
+    <h3 style="color: #3fbdee;">Email</h3>
+    <p>Hello@crownworldltd.com</p>
+    
+    <h3 style="color: #3fbdee;">Company Registration Number</h3>
+    <p>07803084</p>
+    
+    <h1 style="font-weight: 100;">  Have a concern or question about our service?</h1>
+    <p>If you have any concerns, complaints, or questions about our service, please contact us via the form below.
+    </p>
+        </div>
+     </div>
+        <div >
+          <form 
+          id="emailForm" 
+          style="background-color: #eff2f6; padding: 20px; border-radius: 10px;" 
+          onsubmit="sendEmail(event)">
+          <label for="company">Company</label><br>
+          <input type="text" name="company" id="company" required><br><br>
+      
+          <label for="first_name">First name</label><br>
+          <input type="text" name="first_name" id="first_name" required><br><br>
+      
+          <label for="last_name">Last name</label><br>
+          <input type="text" name="last_name" id="last_name" required><br><br>
+      
+          <label for="phone">Phone</label><br>
+          <input type="tel" name="phone" id="phone" required><br><br>
+      
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" required><br><br>
+      
+          <label for="enquiry">Tell us a little bit more about your enquiry</label><br>
+          <textarea name="enquiry" id="enquiry" required></textarea><br><br>
+      
+          <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+      function sendEmail(event) {
+          event.preventDefault(); 
+          
+          // Get the form data
+          const company = document.getElementById('company').value;
+          const firstName = document.getElementById('first_name').value;
+          const lastName = document.getElementById('last_name').value;
+          const phone = document.getElementById('phone').value;
+          const email = document.getElementById('email').value;
+          const enquiry = document.getElementById('enquiry').value;
+          
+          // Construct the mailto link
+          const subject = `New Enquiry from ${firstName} ${lastName}`;
+          const body = `Company: ${company}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nPhone: ${phone}\nEmail: ${email}\n\nEnquiry:\n${enquiry}`;
+          
+          const mailtoLink = `mailto:Hello@crownworldltd.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          
+          // Open the mailto link
+          window.location.href = mailtoLink;
+      }
+      </script>
+      
+       </div>
+    </div>
+    
+    <div >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.5868498898294!2d0.5398333758012601!3d51.373891520448915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8cd6cf0bde2fd%3A0x57cf606df13461a3!2s117%20Constitution%20Rd%2C%20Chatham%20ME5%207DW%2C%20UK!5e0!3m2!1sen!2sng!4v1736176543282!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+<footer>
+    <div>
+  <div style="display: flex;flex-direction: row;">
+        <img src="images/logo.png" alt="" id="imgbtn">
+    </div>
+ <p style="color: #fff;">We save you from all that boring paperwork! For a seamless HR service, we’ve got your back.
+       </p>
+</div>
+  
+  <div id="links">
+    <h3>Links</h3>
+    <a href="index.html">Home</a><br>
+    <a href="about.html">About</a><br>
+    <a href="services.html">Services</a>
+   </div>
+   <div id="links">
+    <h3>Services</h3>
+    <a href="services.html">Payroll Management</a><br>
+    <a href="services.html">Human Resource Services</a><br>
+    <a href="services.html">Accounting Solutions</a>
+    
+   </div>
+    <div>
+   <h3>Contact Us</h3>  
+  <p> <i class="fa fa-map-marker" style=" font-size:20px;color:#1a938a;padding-right: 10px"></i>Mailing Address: 117 Constitution Road Chatham ME5 7DW Kent</p>
+    <p><i class="fa fa-phone" style="font-size:15px;color:#1a938a;padding-right: 10px;"></i>+44 7398 313362</p>
+   <p><i class="fa fa-envelope" style="font-size:15px;color:#1a938a;padding-right: 10px;"></i>Info@crownworldltd.com</p> 
+    </div>
+   
+  
+  </footer>
+      <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+      <div style="padding: 10px;color: #fff;text-align: center;background-color: #060b1e;">
+        <p>© 2025  Zumtree. All rights reserved.</p>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
